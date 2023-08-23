@@ -10,6 +10,7 @@ const App = () => {
 			<section className="padding bg-pale-blue"> customer reviews</section>
 			<section className="padding-x sm:py-32 py-16 w-full"> subscribe</section>
 			<section className="padding-x padding-t pb-8 bg-black ">footer</section>
+			<section className="padding-x padding-t pb-8 bg-black ">footer</section>
 		</main>
 	);
 };
