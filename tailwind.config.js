@@ -17,6 +17,7 @@ export default {
 			fontFamily: {
 				palanquin: ['Palanquin', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
+				arizonia: ['Arizonia', 'cursive'],
 			},
 			colors: {
 				primary: '#ECEEFF',
