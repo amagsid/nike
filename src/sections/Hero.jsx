@@ -1,7 +1,11 @@
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons';
-import { statistics } from '../constants/index';
+import { statistics, shoes } from '../constants';
 import { bigShoe1 } from '../assets/images';
+import ShoeCard from '../components/ShoeCard';
+
+// import { bigShoe1 } from '../assets/images';
+// import { bigShoe1 } from '../assets/images';
 
 const Hero = () => {
 	return (
@@ -46,9 +50,9 @@ const Hero = () => {
 		>
 			<div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full pt-28">
 				<p className="text-xl font-montserrat text-coral-red"> Our summer collection </p>
-				<h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
+				<h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] z-10 max-sm:leading-[82px] font-bold">
 					{' '}
-					<span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+					<span className="xl:bg-white xl:whitespace-nowrap relative z-11 pr-10">
 						{' '}
 						The new arrival{' '}
 					</span>{' '}
@@ -72,7 +76,7 @@ const Hero = () => {
 					))}
 				</div>
 			</div>
-			<div className="flex-1 flex-contianer justify-center align-center relative z-10">
+			<div className=" flex flex-1 flex-contianer justify-center items-center relative z-11 xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
 				<img
 					className="object-contain relative z-10"
 					alt="shoe collection"
@@ -80,6 +84,16 @@ const Hero = () => {
 					height={500}
 					src={bigShoe1}
 				/>
+				<div className=" flex justify-center align-center">
+					{/* <img /> <img /> <img />{' '} */}
+					{shoes.map((shoe, index) => (
+						<div key={shoe}>
+							{' '}
+							<ShoeCard imgURL={shoe} ChangeBigShoeImage={() => {}} bigShoeImg="" />
+							{/* <img src={shoe.thumbnail} />{' '} */}
+						</div>
+					))}
+				</div>
 			</div>
 		</section>
 	);
