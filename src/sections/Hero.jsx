@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons';
 import { statistics, shoes } from '../constants';
@@ -8,6 +9,7 @@ import ShoeCard from '../components/ShoeCard';
 // import { bigShoe1 } from '../assets/images';
 
 const Hero = () => {
+	const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 	return (
 		// <section
 		// 	id="home"
@@ -46,7 +48,7 @@ const Hero = () => {
 		// </section>
 		<section
 			id="home"
-			className="w-full gap-10 flex xl:flex-row max-container flex-col justify-center min-h-screen  border-2 border-red-500 p-2"
+			className="w-full gap-10 flex xl:flex-row max-container flex-col justify-center min-h-screen  p-2"
 		>
 			<div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full pt-28">
 				<p className="text-xl font-montserrat text-coral-red"> Our summer collection </p>
@@ -76,20 +78,26 @@ const Hero = () => {
 					))}
 				</div>
 			</div>
-			<div className=" flex flex-1 flex-contianer justify-center items-center relative z-11 xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+			<div className=" flex flex-1 flex-contianer justify-center items-center relative z-11 xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center max-sm:flex-col">
 				<img
 					className="object-contain relative z-10"
 					alt="shoe collection"
 					width={610}
 					height={500}
-					src={bigShoe1}
+					src={bigShoeImg}
 				/>
-				<div className=" flex justify-center align-center">
+				<div className=" flex gap-4 sm:gap-6 absolute -bottom-[5%] sm:left-[10%]">
 					{/* <img /> <img /> <img />{' '} */}
 					{shoes.map((shoe, index) => (
 						<div key={shoe}>
 							{' '}
-							<ShoeCard imgURL={shoe} ChangeBigShoeImage={() => {}} bigShoeImg="" />
+							<ShoeCard
+								imgURL={shoe}
+								ChangeBigShoeImage={(shoe) => {
+									setBigShoeImg(shoe);
+								}}
+								bigShoeImg={bigShoeImg}
+							/>
 							{/* <img src={shoe.thumbnail} />{' '} */}
 						</div>
 					))}
