@@ -1,26 +1,28 @@
 import { products } from '../constants';
+import PopularProductCard from '../components/PopularProductCard';
 
 const PopularProducts = () => {
 	return (
 		<section
 			id="products"
-			className="max-container max-sm:mt-12n border-2 w-full min-h-screen  border-teal-700 "
+			className="max-container max-sm:mt-12n border-2 w-full   border-teal-700 "
 		>
 			<div className="flex flex-col justify-start gap-5">
 				<h2 className="text-4xl font-palanquin font-bold">
-					{' '}
-					<span className=" text-coral-red">Popular </span> Products
+					Our <span className=" text-coral-red">Popular </span> Products
 				</h2>
-				<p className="">
+				<p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray">
 					{' '}
 					Experience top notxh quality and style with our sought-after selections.
 					Discover a world of comfort, design and value
 				</p>
 			</div>
 
-			<div className="mt-16 grid lg:grid-cols-4">
+			<div className="mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
 				{products.map((product) => {
-					return <div>{product.name} </div>;
+					return (
+						<PopularProductCard key={product.name} {...product}></PopularProductCard>
+					);
 				})}{' '}
 			</div>
 		</section>
