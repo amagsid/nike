@@ -4,9 +4,9 @@ import Button from '../components/Button';
 function SuperQuality() {
 	return (
 		<section id="about-us">
-			<div className="flex max-container max-lg:flex-col justify-center gap-4">
+			<div className="flex max-container max-lg:flex-col max-lg:items-center  justify-center gap-4">
 				{' '}
-				<div className="flex flex-1  flex-col items-start">
+				<div className="flex flex-1  flex-col items-start  ">
 					<h2 className="text-4xl font-bold capitalize font-palanquin lg:max-w-lg">
 						{' '}
 						We Provide you <span className="text-coral-red">Super Quality </span> Shoes
@@ -21,9 +21,9 @@ function SuperQuality() {
 						{' '}
 						Our dedicatiion to detail and excellence ensures your satisfaction
 					</p>
-					<div className="mt-11">
+					<div className="mt-11 flex w-full max-lg:justify-center">
 						{' '}
-						<Button className="mt-6" icon label="view details" />{' '}
+						<Button label="view details" />{' '}
 					</div>
 				</div>
 				<div>

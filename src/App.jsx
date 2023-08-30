@@ -43,10 +43,6 @@ const App = () => {
 			<section className="padding-x padding-t pb-8 bg-black ">
 				<Footer />
 			</section>{' '}
-			<h1> hey</h1>
-			<div>
-				<p> hey</p>
-			</div>
 		</main>
 	);
 };
