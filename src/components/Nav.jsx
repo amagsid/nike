@@ -5,18 +5,25 @@ import { navLinks } from '../constants';
 
 const Nav = () => {
 	return (
-		<header className="padding-x  z-10 w-full">
-			<nav className=" h-[50px] flex justify-between items-center max-container">
+		<header className="flex items-center px-8  z-12 w-full">
+			<nav className=" h-[50px] w-full flex items-center justify-between ">
 				<a href="/">
 					{' '}
-					<img width={100} height={60} alt="Logo" src={headerLogo} />{' '}
+					<img
+						// className="absolute left-2 top-[-16px]"
+						width={90}
+						height={60}
+						alt="Logo"
+						src={headerLogo}
+					/>{' '}
 				</a>
-				<ul className="flex-1 flex justify-end items-between gap-16 max-lg:hidden">
+
+				<ul className=" flex items-between gap-6 max-lg:hidden">
 					{navLinks.map((item) => (
 						<li key={item.label}>
 							{' '}
 							<a
-								className="font-montserrat leading-normal text-lg text-slate-gray"
+								className="font-oswald tracking-wider font-normal text-md "
 								href={item.href}
 							>
 								{item.label}
@@ -24,6 +31,9 @@ const Nav = () => {
 						</li>
 					))}
 				</ul>
+				<div>
+					<h1 className="max-lg:hidden">search</h1>
+				</div>
 				<div className=" hidden max-lg:block">
 					<img height={25} width={25} alt={hamburger} src={hamburger} />
 				</div>

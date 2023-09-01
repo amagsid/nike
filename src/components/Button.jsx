@@ -1,7 +1,7 @@
 const Button = ({ label, iconURL, BgColor, textcolor, borderColor, fullWidth }) => {
 	return (
 		<button
-			className={`flex justify-center items-center gap-2 rounded-full   font-montserrat px-7 py-4 border  text-lg leading-none
+			className={`flex items-center tracking-tight rounded-full font-montserrat font-normal px-5 py-2.5 text-md max-sm:text-sm text-green-100 max-sm:px-5 max-sm:py-  leading-none
 
 			${
 				BgColor
@@ -17,11 +17,11 @@ const Button = ({ label, iconURL, BgColor, textcolor, borderColor, fullWidth }) 
 		>
 			{label}
 
-			{iconURL ? (
+			{/* {iconURL ? (
 				<img className="ml-2 rounded-full w-5 h-5" src={iconURL} alt="arrow right icon" />
 			) : (
 				<div></div>
-			)}
+			)} */}
 		</button>
 	);
 };
