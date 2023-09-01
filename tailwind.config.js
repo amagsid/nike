@@ -18,6 +18,7 @@ export default {
 				palanquin: ['Palanquin', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 				arizonia: ['Arizonia', 'cursive'],
+				oswald: ['Oswald', 'sans-serif'],
 			},
 			colors: {
 				primary: '#ECEEFF',
