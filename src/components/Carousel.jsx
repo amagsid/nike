@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import {
 	CarouselItem1,
 	CarouselItem2,
@@ -12,9 +14,10 @@ import 'tw-elements';
 
 import { Carousel, initTE } from 'tw-elements';
 
-initTE({ Carousel });
-
 const CarouselComponent = () => {
+	useEffect(() => {
+		initTE({ Carousel });
+	}, []);
 	return (
 		<div
 			id="carouselExampleCaptions"
