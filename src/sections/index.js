@@ -9,6 +9,7 @@ import Subscribe from './Subscribe';
 import SuperQuality from './SuperQuality';
 import Header from './Header';
 import FeaturedTrending from './FeaturedTrending';
+import TedLasso from './TedLasso';
 
 export {
 	Hero,
@@ -22,4 +23,5 @@ export {
 	Header,
 	SuperQuality,
 	FeaturedTrending,
+	TedLasso,
 };

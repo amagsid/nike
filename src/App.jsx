@@ -10,6 +10,7 @@ import {
 	SuperQuality,
 	Header,
 	FeaturedTrending,
+	TedLasso,
 } from './sections/index';
 import Nav from './components/Nav';
 const App = () => {
@@ -28,6 +29,10 @@ const App = () => {
 				{' '}
 				<PopularProducts />
 			</section> */}
+			<section className="py-10">
+				{' '}
+				<TedLasso />
+			</section>
 			<section className="padding">
 				{' '}
 				<SuperQuality />

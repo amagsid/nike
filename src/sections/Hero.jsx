@@ -11,41 +11,6 @@ import ShoeCard from '../components/ShoeCard';
 const Hero = () => {
 	const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 	return (
-		// <section
-		// 	id="home"
-		// 	className="w-full flex max-container gap-10 xl:flex-row flex-col justify-center min-h-screen border-2 border-red-500 p-2 items-center"
-		// >
-		// 	<div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-		// 		<p className="text-xl font-montserrat text-coral-red"> Our summer collection </p>
-		// 		<div className=" flex  flex-col justify-center items-start mt-10 text-8xl font-palanquin max-sm:text-[72px] max-sm:leading-[82px]">
-		// 			<h1 className=" font-bold">
-		// 				{' '}
-		// 				<span> The new </span> <br />{' '}
-		// 			</h1>
-		// 			<p className="leading-[150px] max-sm:text-[72px] text-[13rem]  text-coral-red ">
-		// 				BLA
-		// 				<br />
-		// 				<span className="font-arizonia">Z</span>ER{' '}
-		// 			</p>{' '}
-		// 			<p className="font-bold ">
-		// 				{' '}
-		// 				since <span className="font-arizonia"> '77 </span>
-		// 			</p>
-		// 		</div>
-
-		// 		<Button label="Shop now" icon={arrowRight}>
-		// 			{' '}
-		// 		</Button>
-		// 		<div className="   w-full flex justify-start flex-wrap mt-20 gap-16 ">
-		// 			{statistics.map((stat) => (
-		// 				<div key={stat.label}>
-		// 					{' '}
-		// 					<p>{stat.value} </p> <p>{stat.label} </p>{' '}
-		// 				</div>
-		// 			))}
-		// 		</div>
-		// 	</div>
-		// </section>
 		<section
 			id="home"
 			className="w-full gap-10 flex xl:flex-row max-container flex-col justify-center min-h-screen  p-2"

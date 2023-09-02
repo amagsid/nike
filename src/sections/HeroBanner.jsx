@@ -44,16 +44,16 @@ const HeroBanner = () => {
 					</div>
 				</div>
 
-				<div className="flex w-full md:text-center my-11 flex-col bottom-[2rem] md:gap-6 px-4 ">
+				<div className="flex justify-center align-center text-center my-11 flex-col bottom-[2rem] md:gap-6 max-md:gap-3 px-4 ">
 					{' '}
-					<h1 className=" text-[4.25rem] leading-none main-heading  max-sm:text-[42px] z-10 leading-0 font-bold">
+					<h1 className=" text-[4.25rem] leading-none main-heading  max-sm:text-[50px] z-10 leading-0 font-bold">
 						{' '}
-						YOU CAN'T STOP US
+						YOU CAN'T <br className="md:hidden" /> STOP US
 					</h1>{' '}
-					<p className="tracking-wide text-2xl font-light max-md:w-[80%]">
+					<p className="tracking-wide  text-center  text-2xl font-light max-sm:text-sm ">
 						Engineered to the Exact Specifications of Championship Athletes
 					</p>
-					<div className="flex md:justify-center">
+					<div className="flex md:justify-center mx-auto my-0">
 						<Button
 							label="Shop"
 							BgColor="bg-black"
@@ -68,10 +68,8 @@ const HeroBanner = () => {
 			<div className=" flex ">
 				<video
 					src={bannerVideo}
-					className="w-screen"
+					className="w-screen max-sm:object-cover max-sm:h-[50vh] "
 					name="media"
-					width="400"
-					height="200"
 					autoPlay
 					muted
 					loop

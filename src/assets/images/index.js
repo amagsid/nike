@@ -8,7 +8,10 @@ import customer2 from './customer2.svg';
 
 import footerLogo from './footer-logo.svg';
 import headerLogo from './header-logo.svg';
-// import headerLogo from './nike-logo.svg';
+
+import believe from './believe.webp';
+import believe1 from './believe-1.png';
+import believe2 from './believe-2.png';
 
 import offer from './offer.svg';
 
@@ -56,4 +59,7 @@ export {
 	CarouselItem4,
 	CarouselItem5,
 	CarouselItem6,
+	believe,
+	believe1,
+	believe2,
 };
