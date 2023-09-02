@@ -9,6 +9,7 @@ import {
 	Subscribe,
 	SuperQuality,
 	Header,
+	FeaturedTrending,
 } from './sections/index';
 import Nav from './components/Nav';
 const App = () => {
@@ -19,10 +20,14 @@ const App = () => {
 			<section className="  padding-b">
 				<HeroBanner />
 			</section>
-			<section className="padding">
+			<section>
+				{' '}
+				<FeaturedTrending />
+			</section>
+			{/* <section className="padding">
 				{' '}
 				<PopularProducts />
-			</section>
+			</section> */}
 			<section className="padding">
 				{' '}
 				<SuperQuality />

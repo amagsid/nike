@@ -77,7 +77,7 @@ const HeroBanner = () => {
 					loop
 				></video>
 			</div>
-			<div className=" flex flex-1 flex-contianer justify-center items-center relative z-11 xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center max-sm:flex-col">
+			{/* <div className=" flex flex-1 flex-contianer justify-center items-center relative z-11 xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center max-sm:flex-col">
 				<img
 					className="object-contain relative z-10"
 					alt="shoe collection"
@@ -96,11 +96,11 @@ const HeroBanner = () => {
 								}}
 								bigShoeImg={bigShoeImg}
 							/>
-							{/* <img src={shoe.thumbnail} />{' '} */}
+						
 						</div>
 					))}
 				</div>
-			</div>
+			</div> */}
 		</section>
 	);
 };

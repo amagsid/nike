@@ -8,6 +8,7 @@ import SpecialOffers from './SpecialOffers';
 import Subscribe from './Subscribe';
 import SuperQuality from './SuperQuality';
 import Header from './Header';
+import FeaturedTrending from './FeaturedTrending';
 
 export {
 	Hero,
@@ -20,4 +21,5 @@ export {
 	Subscribe,
 	Header,
 	SuperQuality,
+	FeaturedTrending,
 };

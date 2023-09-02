@@ -23,6 +23,13 @@ import thumbnailShoe1 from './thumbnail-shoe1.svg';
 import thumbnailShoe2 from './thumbnail-shoe2.svg';
 import thumbnailShoe3 from './thumbnail-shoe3.svg';
 
+import CarouselItem1 from './carousel-items/carousel-item-1.png';
+import CarouselItem2 from './carousel-items/carousel-item-2.png';
+import CarouselItem3 from './carousel-items/carousel-item-3.png';
+import CarouselItem4 from './carousel-items/carousel-item-4.png';
+import CarouselItem5 from './carousel-items/carousel-item-5.png';
+import CarouselItem6 from './carousel-items/carousel-item-6.png';
+
 export {
 	bigShoe1,
 	bigShoe2,
@@ -43,4 +50,10 @@ export {
 	thumbnailShoe3,
 	BannerImage,
 	BannerDesktop,
+	CarouselItem1,
+	CarouselItem2,
+	CarouselItem3,
+	CarouselItem4,
+	CarouselItem5,
+	CarouselItem6,
 };
