@@ -1,17 +1,20 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { flushSync } from 'react-dom';
-import imageByIndex from './imageByIndex';
+import { products } from '../constants';
 
 const TWEEN_FACTOR = 1.2;
 
 const EmblaCarousel = (props) => {
-	const { slides, options } = props;
+	const { options, slides } = props;
 	const [emblaRef, emblaApi] = useEmblaCarousel(options);
 	const [tweenValues, setTweenValues] = useState([]);
 
 	const onScroll = useCallback(() => {
 		if (!emblaApi) return;
+
+		const slidesInView = emblaApi.slidesInView(true); // <-- Pass true to the slidesInView method
+		// console.log(slidesInView, 'slidesInView');
 
 		const engine = emblaApi.internalEngine();
 		const scrollProgress = emblaApi.scrollProgress();
@@ -55,9 +58,9 @@ const EmblaCarousel = (props) => {
 		<div className="embla">
 			<div className="embla__viewport" ref={emblaRef}>
 				<div className="embla__container">
-					{slides.map((index) => (
+					{slides.map((product, index) => (
 						<div className="embla__slide" key={index}>
-							<div className="embla__slide__number">
+							<div className=" embla__slide__number">
 								<span>{index + 1}</span>
 							</div>
 							<div className="embla__parallax">
@@ -71,9 +74,10 @@ const EmblaCarousel = (props) => {
 								>
 									<img
 										className="embla__slide__img embla__parallax__img"
-										src={imageByIndex(index)}
+										src={product.imgURL}
 										alt="Your alt text"
 									/>
+									<h1> {product.name}</h1>
 								</div>
 							</div>
 						</div>

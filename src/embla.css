@@ -28,6 +28,7 @@
 	object-fit: cover;
 }
 .embla__slide__number {
+	color: blueviolet;
 	width: 4.6rem;
 	height: 4.6rem;
 	z-index: 1;
