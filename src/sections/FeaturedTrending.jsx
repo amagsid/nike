@@ -4,7 +4,7 @@ import EmblaCarousel from '../components/EmblaCarousel';
 
 import { featuredProducts } from '../constants';
 
-const OPTIONS = { dragFree: true, loop: true };
+const OPTIONS = { dragFree: true, loop: true, containScroll: 'trimSnaps' };
 
 const FeaturedTrending = () => {
 	return (

@@ -1,31 +1,30 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { DotButton, useDotButton } from './EmblaCarouselDotButton';
-import { PrevButton, NextButton, usePrevNextButtons } from './EmblaCarouselArrowButtons';
-import { flushSync } from 'react-dom';
-import { products } from '../constants';
+// import { DotButton, useDotButton } from './EmblaCarouselDotButton';
+// import { PrevButton, NextButton, usePrevNextButtons } from './EmblaCarouselArrowButtons';
+import imageByIndex from './imageByIndex';
 
 const EmblaCarousel = (props) => {
-	const { options, slides } = props;
+	const { slides, options } = props;
 	const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
-	const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
+	// const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
 	const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } =
 		usePrevNextButtons(emblaApi);
 
 	return (
-		<div className="embla w-screen">
+		<div className="embla">
 			<div className="embla__viewport" ref={emblaRef}>
 				<div className="embla__container">
-					{slides.map((product, index) => (
+					{slides.map((index) => (
 						<div className="embla__slide" key={index}>
 							<div className="embla__slide__number">
 								<span>{index + 1}</span>
 							</div>
 							<img
 								className="embla__slide__img"
-								src={product.imgURL}
+								src={imageByIndex(index)}
 								alt="Your alt text"
 							/>
 						</div>
@@ -33,7 +32,7 @@ const EmblaCarousel = (props) => {
 				</div>
 			</div>
 
-			<div className="embla__buttons w-screen">
+			<div className="embla__buttons">
 				<PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
 				<NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
 			</div>

@@ -29,10 +29,7 @@ const App = () => {
 				{' '}
 				<PopularProducts />
 			</section> */}
-			<section className="py-10">
-				{' '}
-				<TedLasso />
-			</section>
+			<section className="py-10"> {/* <TedLasso /> */}</section>
 			<section className="padding">
 				{' '}
 				<SuperQuality />

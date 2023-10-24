@@ -92,7 +92,6 @@ export const featuredProducts = [
 	{
 		imgURL: CarouselItem1,
 		name: 'Air Force',
-		// subtext: 'Enjoy seamless shopping with our complimentary shipping service.',
 	},
 	{
 		imgURL: CarouselItem2,
