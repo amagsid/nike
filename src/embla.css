@@ -84,6 +84,7 @@
 	cursor: pointer;
 	width: 4rem;
 	height: 4rem;
+	color: #dddddd;
 }
 .embla__button:disabled {
 	opacity: 0.3;
